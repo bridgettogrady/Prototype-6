@@ -17,7 +17,8 @@ public class LaserMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(transform.up * speed * Time.deltaTime);
+        transform.position += transform.up * speed * Time.deltaTime;
+        Debug.Log(transform.up.y);
 
         // delete if out of bounds
         if (transform.position.x > maxX || transform.position.x < minX
