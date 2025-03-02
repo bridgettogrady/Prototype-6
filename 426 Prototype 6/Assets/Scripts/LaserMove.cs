@@ -18,7 +18,6 @@ public class LaserMove : MonoBehaviour
     void Update()
     {
         transform.position += transform.up * speed * Time.deltaTime;
-        Debug.Log(transform.up.y);
 
         // delete if out of bounds
         if (transform.position.x > maxX || transform.position.x < minX
