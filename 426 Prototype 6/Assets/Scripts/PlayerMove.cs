@@ -20,11 +20,6 @@ public class PlayerMove : MonoBehaviour
     public ChooseAttack UIScript;
     int currAttack = 0; // 0: laser, 1: fireball, 2: bomb
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-    }
-
     // Update is called once per frame
     void Update()
     {
